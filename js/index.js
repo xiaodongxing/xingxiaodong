@@ -1,16 +1,20 @@
 //header效果
 
 //header topnav
-$("#header .item_btn").hover(function(){
-	$(this).find(".item_con").slideDown(500);
-},function(){
-	$(this).find(".item_con").slideUp(500);
+$("#header .item_btn").mouseenter(function(){
+	$(this).find(".item_con").stop().slideDown(200);
+})
+$("#header .item_btn").mouseleave(function(){
+	$(this).find(".item_con").stop().slideUp(200);
 })
 //header center
-$("#header .shopcar").hover(function(){
-	$("#header .shopcar").find(".shopgoods").slideDown(0);
-},function(){
-	$("#header .shopcar").find(".shopgoods").slideUp(500);
+$("#header .shopcar").mouseenter(function(){
+	$("#header .shopcar").find(".shopgoods").css({"display":"block"})
+})
+$("#header .shopcar").mouseleave(function(){
+	$("#header .shopcar").find(".shopgoods").animate({"height":0},300,function(){
+		$(this).css({"display":"none","height":"280px"})
+	});
 })
 //header mainnav
 $("#header .con_right li.fcb").hover(function(){
@@ -89,4 +93,56 @@ $("#mainbody .b_btn").click(function(){
 	$("#mainbody .brand_nav li").eq(brand_index).find("i").css("display","block")
 												.end().siblings().find("i").css("display","none")
 	$("#mainbody .brand_con .bc_page").eq(brand_index).css("display","block").siblings(".bc_page").css("display","none")
+})
+//左边侧栏的点击事件
+$("#side .side_left .sl_btn").click(function(){
+	$(this).css("background","#00c8ff").find("a").css({"color":"#fff","border-bottom":"none"})
+										.end()
+										.siblings(".sl_btn")
+										.css("background","#fff")
+										.find("a")
+										.css({"color":"#6c6c6c","border-bottom":"1px dotted #c4c4c4"})
+})
+//右侧边栏的事件
+$("#side .side_right .sr_show").hover(function(){
+	$(this).children("div").css({"display":"block"})
+						   .stop().animate({"right":"35px","opacity":1},200,function(){
+							$(this).css("display","block")
+						})
+},function(){
+	$(this).children("div").stop().animate({"right":"55px","opacity":0},200,function(){
+		$(this).css("display","none")
+	})
+						
+})
+//右侧边栏 点击top页面上升事件
+$("#side .sr_top").click(function(){
+	document.body.scrollTop=document.documentElement.scrollTop=0;
+})
+
+//购物框的显示
+$("#side .sr_item").click(function(evt){
+	var e=evt||event;
+	e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
+	var index=$(this).index()
+	if(index>=1){
+		$("#side .nav_content").eq(index-1).parent().css("display","block").animate({"left":"-300px"},500)
+			.end().css("display","block").siblings(".nav_content").css("display","none")
+	}
+	
+})
+$("body,#side .rs_btn").click(function(){
+	$("#side .right_box").animate({"left":"35px"},500,function(){
+		$(this).css("diaplay","none")
+	})
+})
+
+//$(document).click(function(){
+//	$("#side .right_box").animate({"left":"35px"},500,function(){
+//		$(this).css("diaplay","none")
+//	})
+//})
+$("#side .side_right").click(function(evt){//单独给最外围的盒子一个点击事件进行阻止冒泡，以防止冒泡到body
+	var e=evt||event;
+	e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
 })
