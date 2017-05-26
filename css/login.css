@@ -1,0 +1,143 @@
+/*公共样式*/
+html,body,ul,li,div,a,h1,h2,h3,h4,h5,h6,ol,dl,dd,dt,p,img{
+	padding:0;
+	margin:0;
+}
+body,input,button,select,textarea{
+	font:12px \5b8b\4f53,\5fae\8f6f\96c5\9ed1,Tahoma, Helvetica, Arial, sans-serif;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	cursor:pointer;
+	outline: 0 none;
+	color:#6c6c6c;
+}
+body{
+	font-family:"微软雅黑",Arial;
+}
+img{
+	border:0;
+}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+b,em,i{display:inline-block; font-weight:normal; font-style:normal;}
+input,select,textarea{outline: none;}
+.w1100{
+	width:1100px;
+	margin:0 auto;
+}
+.w960{
+	width:960px;
+	margin:0 auto;
+}
+
+/*header样式*/
+
+#header{
+	width:100%;
+}
+
+/*header topnav*/
+
+#header .topnav {
+	height:29px;
+	background:#f2f2f2;
+	border-bottom:1px solid #e5e5e5;
+}
+#header .topnav_con{height:29px;margin: 0 auto;line-height: 29px;}
+#header .topnav a{
+	display: block;
+}
+#header .topnav .top_left{
+	float:left;
+}
+#header .topnav li,#header .topnav li a{
+	color:#6c6c6c;
+	font-size:12px;
+}
+
+#header .topnav .top_left ul li{
+	float:left;
+	padding-right:30px;
+	overflow: hidden;
+}
+#header .topnav .top_right{
+	float:right;
+}
+#header .topnav .top_right ul li{
+	float:left;
+	padding:0 12px;
+	position:relative;
+}
+#header .topnav .top_right ul li a{
+	overflow: hidden;
+}
+#header .topnav .top_right ul li.item_line{padding:0 4px;}
+#header .topnav .top_right ul li.item_phone a{ padding-left:13px; background:url(../img/header_phone.jpg) left center no-repeat;}
+#header .topnav .top_right ul li.item_btn:hover{background:#ffffff;}
+#header .topnav .top_right ul li.item_btn>a{ background:url(../img/header_tubiao.jpg) right center no-repeat;}
+#header .topnav .top_right ul li.item_btn:hover>a{background:url(../img/header_tubiao_top.jpg) right center no-repeat;} 
+#header .topnav .top_right ul li span{float:left;}
+#header .topnav .top_right ul li i{center no-repeat;float:right;width:6px;height:29px;margin-left:7px;}
+#header .topnav .top_right ul li .item_personal_subnav{width:100%;position:absolute;left:-1px;top:29px;border:1px solid #e5e5e5;border-top:none;padding:3px 0 10px;overflow: hidden;display: none;z-index: 400;background: #FFFFFF;}
+#header .topnav .top_right ul li .item_personal_subnav>img{display: block;margin:5px auto 0}
+#header .logo{height:108px;}
+#header .logo .logo_left{float:left}
+#header .logo .logo_right{float:right}
+/*content*/
+/*banner部分*/
+#content{width:100%;height:785px;position:relative;}
+.banner{width:100%;height:785px;background:url(../img/pagepublic_banner.jpg)center no-repeat}
+.banner a{display: block;width:100%;height:785px;}
+.login{position:absolute;top:125px;left:50%;margin-left:74px;width:326px;height:500px;background:#FFFFFF;padding:35px 40px 0;box-shadow: 0 0 26px #fcdfdf;}
+.login_top{margin-bottom:25px;}
+.login_top p{font-size:24px;color:#000000;height:24px}
+.login_top p a{margin-top:7px;float:right;font-size:16px;color:#00c8ff;}
+.login_userinfo .u_info_h{height:56px;}
+.login_userinfo .u_info_p{height:30px;line-height: 30px;font-size:16px;margin-top:15px;}
+.login_userinfo .sign_text{padding:7px 0;padding-left:10px;width:315px;height:16px;font-size:14px;color:#6C6C6C;border:1px solid #c4c4c4}
+.login_userinfo .u_info_text{overflow: hidden;}
+.login_userinfo .u_info_text .sign_text{width:160px;float:left}
+.login_userinfo .u_info_text .yzm_code{float:left;width:73px;height:18px;line-height:18px;border:1px solid #7697c7;font-size:16px;margin-left:21px;margin-top:7px;background:#00C8FF;text-align: center;}
+.login_userinfo .u_info_text .re_code{float:left;width:46px;height:20px;line-height:20px;color:#00c8ff;font-size:14px;text-align: center;margin-left:11px;margin-top:7px;cursor: pointer;}
+.login_userinfo .u_info_btn{padding-bottom:10px;border-bottom: 1px dotted #e3e3e3;}
+.login_userinfo .u_info_btn .login_btn{width:326px;height:35px;background:#00c8ff;text-align: center;line-height: 35px;color:#FFFFFF;font-size:20px;border:0;cursor: pointer;margin:20px 0 5px;}
+.login_userinfo .u_info_btn a{color:#00C8FF;}
+.login_userinfo .u_info_other{padding-top:30px;font-size: 12px;}
+.login_userinfo .u_info_other p{float:left;height:14px;line-height: 14px;padding-left:16px;background:url(../img/login_bg.png) left -40px no-repeat;}
+.login_userinfo .u_info_other a{float:right; color:#6c6c6c;}
+.login_foot{padding-top:15px;}
+.login_foot p{color:#6c6c6c;margin-bottom: 10px;}
+.login_foot li{float:left;height:20px;margin-right:20px;margin-bottom: 10px;}
+.login_foot li a{padding-left:30px;color:#6C6C6C;display: block;line-height: 30px;height:30px}
+.login_foot li.qq a{background:url(../img/login_foot.png) left 5px no-repeat}
+.login_foot li.zfb a{background:url(../img/login_foot.png) left -25px no-repeat}
+.login_foot li.xinlang a{background:url(../img/login_foot.png) left -55px no-repeat}
+.login_foot li.t360 a{background:url(../img/login_foot.png) left -87px no-repeat}
+.login_foot li.baidu a{background:url(../img/login_foot.png) left -115px no-repeat}
+.login_foot li.ren a{background:url(../img/login_foot.png) left -147px no-repeat}
+.login_foot li.xunlei a{background:url(../img/login_foot.png) left -177px no-repeat}
+/*footer部分*/
+#footer{width:100%;padding-bottom: 50px;background:#FFFFFF;}
+#footer dl a,#footer dl{font-size:14px;color:#6c6c6c}
+#footer .foot_top{padding-top: 35px;padding-left:10px}
+#footer .foot_top dl{float:left;width:120px;}
+#footer .foot_top dl dt{font-weight: bold;margin-bottom: 15px;}
+#footer .foot_top dl dd a{display:block;height:24px;line-height: 24px;}
+#footer .foot_top dl dd.hot_line{font-weight: bold;padding: 8px 0;}
+#footer .foot_top dl dd.hot_tell{color:#00c8ff;font-size: 8px;display: block;height:24px;line-height: 12px;}
+#footer .foot_top .dl_last{float:right;width:100px;padding:0;}
+/*footer部分下的center*/
+#footer .foot_center{width:100%;background: #00c8ff;height:35px;line-height: 35px;margin-top:40px;}
+#footer .foot_center .fc_list{display: flex;width:600px;margin:0 auto;justify-content: space-between;}
+#footer .foot_center .fc_list li{padding-left:30px;font-family:"微软雅黑";font-size: 14px;font-weight: bold;color:#fff}
+#footer .foot_bottom{padding-top: 18px;}
+#footer p,#footer li,#footer a{font-size:12px;color:#6c6c6c}
+#footer .fb_p1{color:#323232;padding-left: 15px;margin-bottom: 20px;}
+#footer .fb_p2{text-align: center;margin-bottom: 10px;}
+#footer .fb_list{display: flex;width:440px;margin:0 auto 25px;}
+#footer .fb_list i{padding:0 5px;font-style: normal;}
+#footer .fb_img{text-align: center;}

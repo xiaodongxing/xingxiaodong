@@ -98,12 +98,13 @@ input,select,textarea{outline: none;}
  .search ul li a{margin:0 9px;}
  .search ul li i{font-style: normal;color: #c4c4c4;}
 #header .shopcar{float: right;width:125px;position: relative;margin:26px 2px 0 0;border:1px solid #e2e2e2;border-radius: 3px;box-shadow: 0 0 2px #d8d8d8;height:36px;}
-#header .shopcar a{position:absolute;left:0;top:0;z-index:300;font-size:12px;display:block;width:79px;padding-left:45px;background:#FFFFFF url(../img/header_center_shopcar.jpg) 10px center no-repeat;height:36px;line-height: 36px;}
+#header .shopcar>a{position:absolute;left:0;top:0;z-index:300;font-size:12px;display:block;width:79px;padding-left:45px;background:#FFFFFF url(../img/header_center_shopcar.jpg) 10px center no-repeat;height:36px;line-height: 36px;}
 #header .shopcar:hover{border-bottom: 0;box-shadow:0 -2px 4px #d8d8d8;}
-#header .shopcar a span{float: left;}
-#header .shopcar a i{float:left;width:6px;height:36px;background: url(../img/header_tubiao.jpg) 0 center no-repeat;margin-left:5px;}
-#header .shopcar a:hover i{background: url(../img/header_tubiao_top.jpg) 0 center no-repeat;}
-#header .shopgoods{background:#fff;display:none;width:280px;height:280px;position:absolute;top:33px;right:-1px;border:1px solid #e2e2e2;padding:0 10px 10px;z-index: 200;border-radius: 3px;}
+#header .shopcar>a span{float: left;}
+#header .shopcar>a i{float:left;width:6px;height:36px;background: url(../img/header_tubiao.jpg) 0 center no-repeat;margin-left:5px;}
+#header .shopcar>a:hover i{background: url(../img/header_tubiao_top.jpg) 0 center no-repeat;}
+#header .shopgoods{background:#fff;display:none;width:280px;height:300px;position:absolute;top:33px;right:-1px;border:1px solid #e2e2e2;padding:0 10px 10px;z-index: 200;border-radius: 3px;}
+#header .shopgoods .myshop_con{overflow:auto;max-height:250px}
 .shopgoods_empty{padding:30px 0;text-align: center;color: #c4c4c4;}
 .shopgoods_empty .empty_bg{width:138px;height:166px;background:url(../img/header_center_shopcar_p_bg.jpg) left top no-repeat;margin:0 auto;}
 .shopgoods_empty .empty_cont1{margin-top:10px;font-size:22px;}
@@ -129,7 +130,7 @@ ul li.fcb_return{background:url(../img/header_mainnav_bg_return.jpg) left center
 #header .shop_list .list1 h3{font-size:14px;color:#8e8e8e;padding-left:20px;height:36px;line-height:36px;background:url(../img/header_shop_list.jpg) left center no-repeat;border-bottom: 1px dashed #c4c4c4;}
 #header .shop_list .list1 ul li{float:left;padding-right:20px;font-size: 12px;color:#6c6c6c;}
 /*footer部分*/
-#footer{width:100%;padding-bottom: 50px;}
+#footer{width:100%;padding-bottom: 50px;background:#FFFFFF;}
 #footer dl a,#footer dl{font-size:14px;color:#6c6c6c}
 #footer .foot_top{padding-top: 35px;padding-left:10px}
 #footer .foot_top dl{float:left;width:120px;padding-left:20px;}
@@ -151,8 +152,8 @@ ul li.fcb_return{background:url(../img/header_mainnav_bg_return.jpg) left center
 #footer .fb_img{text-align: center;}
 /*固定侧栏*/
 /*左侧边栏*/
-#side .side_left{position:fixed;left:5px;top:200px;background: #fff;}
-#side .side_left li{width:60px;height:60px;margin-bottom: 1px;}
+.myshopcar .side_left{position:fixed;left:5px;top:200px;background: #fff;}
+.myshopcar .side_left li{width:60px;height:60px;margin-bottom: 1px;}
 #side .side_left li a{display:block; width:60px;height:59px;color:#6c6c6c;font-size:12px;text-align: center;border-bottom: 1px dotted #c4c4c4;}
 #side .side_left li.s_shouye a{height:50px;text-align: center;font-size: 14px;padding-top:10px;background:#00c8ff;color:#fff;border:none}
 #side .side_left li.s_toutiao a{height:20px; padding-top:42px;background: url(../img/side_right_bg.png) center -60px no-repeat;}
@@ -200,29 +201,28 @@ ul li.fcb_return{background:url(../img/header_mainnav_bg_return.jpg) left center
 #side .nav_content .empty_cont1{font-size: 18px;}
 /*购物筐代码*/
 #side .nav_content{padding-top:10px;font-size:12px;color:#6c6c6c}
-#side .myshopcar{margin-top:10px}
-#side .myshop_list{width: 260px;}
-#side li.myshop_item{overflow: hidden;width:260px;padding:20px 0;border-bottom: 1px dotted #e3e3e3;}
-#side li.myshop_item .shop_img{float:left;width:78px;height:78px;border:1px solid #e4e4e4}
-#side li.myshop_item .shop_img a{display: block;width:78px;height:78px;}
-#side li.myshop_item .shop_img a img{display: block;width:78px;height:78px;}
-#side li.myshop_item .shop_info{float:right;width:170px;}
-#side li.myshop_item .shop_info .shop_opreat{overflow: hidden;}
-#side li.myshop_item .shop_info .shop_info_name{color:#6c6c6c;height:35px;margin:8px 0 10px;}
-#side li.myshop_item .shop_opreat .shop_price{float:left;color:#ff643c;font-size:14px;width:50px;height:24px;line-height: 24px;margin-right: 8px;}
-#side li.myshop_item .shop_opreat .shop_count{float:left;width:77px;height:24px;border:1px solid #e4e4e4;overflow: hidden;}
-#side li.myshop_item .shop_opreat .shop_count span{width:24px;float:left;text-align: center;font-size: 20px;height:24px;line-height:24px;cursor: pointer;}
-#side li.myshop_item .shop_opreat .shop_count input{width:29px;float:left;height:24px;border:0;line-height: 24px;text-align: center;font-family: arial;font-size: 14px;}
-#side .myshopcar .shop_opreat a{float:right;font-size:10px;text-decoration: underline;padding-top:10px}
-#side li.myshop_item .shop_opreat .shop_add{width:90px;height:26px;background:#FF643C;float:right;color:#fff;text-align: center;line-height: 26px;}
-#side .myshop_clear{width:254px;height:39px;border-bottom: 1px dotted #e3e3e3;overflow: hidden;line-height: 39px;}
-#side .myshop_clear .myshop_jianshu{float:left;}
-#side .myshop_clear .myshop_jianshu span{color:#ff643c;font-family: arial;font-size:18px;font-weight: bold;margin:0 2px;}
-#side .myshop_clear .myshop_clearBtn{float:right}
-#side .myshop_clear .myshop_clearBtn a{font-size:14px;color:#ff643c;font-weight: bold;}
-#side .myshopcar .account{padding-top:10px;position:relative}
-#side .account .account_shopcount span{color:#ff643c;font-family: arial;font-size:18px;font-weight: bold;margin:0 2px}
-#side .account .account_zongjia i{font-style: normal;padding:0 6px;color:#ff643c;}
-#side .account .account_zongjia span{font-size:18px;font-weight: bold;color:#ff643c;}
-#side .account .account_btn {width:90px;height:26px;}
-#side .account .account_btn a{display: block;width:90px;height:26px;line-height: 26px;background:#ff643c;color:#fff;text-align: center;position:absolute;right:0;top:30px;}
+#side .myshopcar{margin-top:10px}.myshopcar .myshop_list{width: 260px;}
+.myshopcar li.myshop_item{overflow: hidden;width:260px;padding:20px 0;border-bottom: 1px dotted #e3e3e3;}
+.myshopcar li.myshop_item .shop_img{float:left;width:78px;height:78px;border:1px solid #e4e4e4}
+.myshopcar li.myshop_item .shop_img a{display: block;width:78px;height:78px;}
+.myshopcar li.myshop_item .shop_img a img{display: block;width:78px;height:78px;}
+.myshopcar li.myshop_item .shop_info{float:right;width:170px;}
+.myshopcar li.myshop_item .shop_info .shop_opreat{overflow: hidden;}
+.myshopcar li.myshop_item .shop_info .shop_info_name{color:#6c6c6c;height:35px;margin:8px 0 10px;}
+.myshopcar li.myshop_item .shop_opreat .shop_price{float:left;color:#ff643c;font-size:14px;width:50px;height:24px;line-height: 24px;margin-right: 8px;}
+.myshopcar li.myshop_item .shop_opreat .shop_count{float:left;width:77px;height:24px;border:1px solid #e4e4e4;overflow: hidden;}
+.myshopcar li.myshop_item .shop_opreat .shop_count span{width:24px;float:left;text-align: center;font-size: 20px;height:24px;line-height:24px;cursor: pointer;}
+.myshopcar li.myshop_item .shop_opreat .shop_count input{width:29px;float:left;height:24px;border:0;line-height: 24px;text-align: center;font-family: arial;font-size: 14px;}
+.myshopcar .shop_opreat a{float:right;font-size:10px;text-decoration: underline;padding-top:10px}
+.myshopcar li.myshop_item .shop_opreat .shop_add{width:90px;height:26px;background:#FF643C;float:right;color:#fff;text-align: center;line-height: 26px;}
+.myshopcar .myshop_clear{width:254px;height:39px;border-bottom: 1px dotted #e3e3e3;overflow: hidden;line-height: 39px;}
+.myshopcar .myshop_clear .myshop_jianshu{float:left;}
+.myshopcar .myshop_clear .myshop_jianshu span{color:#ff643c;font-family: arial;font-size:18px;font-weight: bold;margin:0 2px;}
+.myshopcar .myshop_clear .myshop_clearBtn{float:right}
+.myshopcar .myshop_clear .myshop_clearBtn a{font-size:14px;color:#ff643c;font-weight: bold;}
+.myshopcar .account{padding-top:10px;position:relative}
+.myshopcar .account .account_shopcount span{color:#ff643c;font-family: arial;font-size:18px;font-weight: bold;margin:0 2px}
+.myshopcar .account .account_zongjia i{font-style: normal;padding:0 6px;color:#ff643c;}
+.myshopcar .account .account_zongjia span{font-size:18px;font-weight: bold;color:#ff643c;}
+.myshopcar .account .account_btn {width:90px;height:26px;}
+.myshopcar .account .account_btn a{display: block;width:90px;height:26px;line-height: 26px;background:#ff643c;color:#fff;text-align: center;position:absolute;right:0;top:30px;}

@@ -1,7 +1,8 @@
 #content{
     width:100%;
     background:#f6f6f3;
-    padding-top:20px;
+    padding:20px 0 35px;
+    overflow: hidden;
     .content .now_pos ul{
         height:40px;
         line-height: 40px;
@@ -307,6 +308,9 @@
                         }
                     }
                 }
+                .rec_img:hover{
+                    opacity:.8;
+                }
                 .rec_info{
                     padding:10px 12px 15px;
                     background: #FFFFFF;
@@ -422,9 +426,11 @@
             float:right;
             width:700px;
             .detail_info_nav{
+                width:700px;
                 height:40px;
                 line-height: 40px;
                 background:#6C6C6C;
+                z-index:500;
                 ul{
                     float:left;
                     padding-left:35px;
@@ -471,11 +477,190 @@
                         }
                     }
                 }
-                .info_right_con{
-                    padding:20px 20px 0;
+             } 
+            .info_right_con{
+                padding:20px 20px 0; 
+                background:#FFFFFF; 
+                h2{
+                    font-weight: normal;
+                    height:25px;
+                    border-bottom: 1px solid #C4C4C4;
+                    span{
+                            display: block;
+                            height:18px;
+                            line-height: 18px;
+                            border-left:5px solid #00c8ff;
+                            padding-left:5px;
+                            font-size:18px;
+                            color:#000000;
+                            i{
+                                font-style: normal;
+                                font-family: arial;
+                                margin-left:8px;
+                                }
+                        }
+                    }
+                .product_info{
+                   
+                    .intro_list{
+                        padding:25px 0;
+                        min-height:240px;
+                        position:relative;
+                       
+                        table{
+                            border-collapse: collapse;
+                            border-spacing:0 ;
+                            td{
+                                line-height:25px;
+                                vertical-align: top;
+                            }
+                            .tab_title{
+                                font-weight: bold;
+                                color:#000000;
+                                width:60px;
+                            }
+                            .tab_con{
+                                width:300px;
+                                padding-left:25px;
+                            }
+                        }
+                        .intro_img{
+                            width:225px;
+                            height:225px;
+                            position:absolute;
+                            right:20px;
+                            top:30px;
+                            img{
+                                width:225px;
+                                height:225px;
+                            }
+                        }
+                    }
+                }
+                .pro_con{
+                    padding:20px 0 40px;
+                    img{
+                        display:block;
+                        max-width: 660px;
+                        margin: 0 auto;
+                    }
+                }
+                .use_con{
+                    padding:20px 0 40px;
+                }
+                .price_explain ul{
+                    height:38px;
+                    padding:20px 0 30px;
+                    li{
+                        line-height: 38px;
+                        float:left;
+                        font-size:18px;
+                        margin-right:6px;
+                    }
+                    .pri_list{
+                        width:160px;
+                        height:36px;
+                        border:1px dashed #f39800;
+                        background:#f7edd8;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            color:#C4C4C4;
+                            margin:0 auto;
+                            display: block;
+                            width:120px;
+                            height:22px;
+                            line-height: 22px;
+                            text-align: center;
+                            background:#ffffff;
+                            font-size:12px;
+                            i{
+                                font-style: normal;
+                            }
+                        }
+                    }
+                }
+                .product_usercomment{
+                    .comment_list{
+                        padding:30px 0;
+                        li{
+                            height:92px;
+                            margin-bottom: 20px;
+                            .comment_ueser{
+                                float:left;
+                                width:70px;
+                                height:92px;
+                                .com_userphoto{
+                                    width:70px;
+                                    height:70px;
+                                    margin-bottom:12px;
+                                    img{
+                                        width:70px;
+                                        height:70px;
+                                    }
+                                }
+                                .com_username{
+                                    text-overflow: ellipsis;
+                                    white-space:nowrap;
+                                    overflow:hidden;
+                                    text-align: center;
+                                    color: #000000;
+                                }
+                                
+                            }
+                            .comment_con{
+                                padding:15px 20px;
+                                height:62px;
+                                width:520px;
+                                float:right;
+                                background:#f6f6f3; 
+                                .com_timer{
+                                    height:15px;
+                                    margin-bottom: 15px;
+                                    p{
+                                        float:left;
+                                    }
+                                    p.com_star{
+                                        height:15px;
+                                        width:88px;
+                                        margin-left:10px;
+                                        background:url(../img/comment_star.png) left top no-repeat;
+                                        span{
+                                            display: block;
+                                            height:15px;
+                                            width:100%;
+                                            background: url(../img/comment_star.png) left -20px no-repeat;
+                                        }
+                                    }
+                                    .com_nowtimer{
+                                        float:right;
+                                        color:#c4c4c4;
+                                    }
+                                }
+                                .com_content{
+                                    height:15px;
+                                    line-height:15px;
+                                    padding-left:35px;
+                                }
+                                .com_zan{
+                                    height:15px;
+                                    p{
+                                        float:right;
+                                        a{
+                                            display: block;
+                                            height:15px;
+                                            padding:0 5px 0 20px;
+                                        background:url(../img/comment_star.png) left -37px no-repeat;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
                 }
             }
-        }
+        } 
     }
 }
 

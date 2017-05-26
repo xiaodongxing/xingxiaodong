@@ -9,11 +9,15 @@ requirejs.config({
 requirejs(["jquery","publicJs"],function($,pJs){
 	pJs.shopCar();
 	$(".header").load("public.html #header",function(){
-		$(".topnav_con,.header_center_cont,.mainnav_cont").removeClass("w1100").addClass("w960")
 		pJs.headerJs();
+		$(".mainnav").css("background","none")
+		$(".mainnav").mouseenter(function(){
+			$(this).css("background-color","#00647f")
+		}).mouseleave(function(){
+			$(this).css("background-color","#00c8ff")
+		})
 	})
 	$(".footer").load("public.html #footer",function(){
-		$(".foot_top,.foot_bottom").removeClass("w1100").addClass("w960")
 		$(".foot_top dl").css("padding",0)
 	})
 	$(".side").load("public.html #side",function(){
@@ -31,4 +35,9 @@ requirejs(["jquery","publicJs"],function($,pJs){
 	 		$(".detail_info_nav")[0].style.position = "";
 	 	}
 	 }
+	$("#main .list_info a").click(  function(){
+		$(this).css("color","#ff643c").find("i").css("background","#ff643c")
+				.end().siblings().css("color","#6c6c6c").find("i").css("background","#6c6c6c")
+				.end().parent().siblings(".list_info").find("a").css("color","#6c6c6c").find("i").css("background","#6c6c6c")
+	})
 })

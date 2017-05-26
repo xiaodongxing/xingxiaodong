@@ -3,12 +3,11 @@ requirejs.config({
 		 jquery:"jquery-1.11.1.min",
 		 cookie:"cookie",
 		 publicJs:"public",
-		 shopCar:"shopCar"
 	}
 })
 //子功能实现
-requirejs(["jquery","publicJs","shopCar"],function($,pJs,shop){
-	shop.shopCar();
+requirejs(["jquery","publicJs"],function($,pJs){
+	pJs.shopCar();
 	//动态加载头部尾部和侧边栏
 	$(".header").load("public.html #header",function(){
 		pJs.headerJs();
@@ -21,15 +20,13 @@ requirejs(["jquery","publicJs","shopCar"],function($,pJs,shop){
 	//header topnav
 	$("#header .item_btn").mouseenter(function(){
 		$(this).find(".item_con").stop().slideDown(200);
-	})
-	$("#header .item_btn").mouseleave(function(){
+	}).mouseleave(function(){
 		$(this).find(".item_con").stop().slideUp(200);
 	})
 	//header center
 	$("#header .shopcar").mouseenter(function(){
 		$("#header .shopcar").find(".shopgoods").css({"display":"block"})
-	})
-	$("#header .shopcar").mouseleave(function(){
+	}).mouseleave(function(){
 		$("#header .shopcar").find(".shopgoods").animate({"height":0},300,function(){
 			$(this).css({"display":"none","height":"280px"})
 		});

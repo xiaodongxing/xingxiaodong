@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<div id="header">
+			<div class="topnav">
+				<div class="topnav_con w960">
+					<div id="login_status" class="top_left">
+						<ul class="clearfix">
+							<li>欢迎来到知我！这里，用专业呵护美丽。</li>
+							<li><a href="#">请登录</a></li>
+							<li><a href="pagepublic.html">快速注册</a></li>
+						</ul>
+					</div>
+					<div class="top_right">
+						<ul class="clearfix">
+							<li class="item_phone"><a href="#"><span>手机知我</span></a></li>
+							<li class="item_personal item_btn">
+								<a href="#"><span>我的小窝</span><i></i></a>
+								<div class="item_personal_subnav item_con">
+									<ul>
+										<li><a href="">我的订单</a></li>
+										<li><a href="">我的优惠券</a></li>
+										<li><a href="">我的收藏</a></li>
+										<li><a href="">我的预定</a></li>
+										<li><a href="">我的积分</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="item_line">|</li>
+							<li class="item_service item_btn">
+								<a href="#"><span>客户服务</span><i></i></a>
+								<div class="item_personal_subnav item_con">
+									<ul>
+										<li><a href="">帮助中心</a></li>
+										<li><a href="">新浪微博</a></li>
+										<li><a href="">正品承诺</a></li>
+										<li><a href="">真伪查询</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="logo w960">
+				<img class="logo_left" src="img/logo.jpg" alt="" />
+				<img class="logo_right" src="img/logo_right.jpg" alt="" />
+			</div>
+		</div>
+		<div id="content">
+			<div class="banner"><a href="#"></a></div>
+			<div class="login">
+				<div class="login_top">
+					<p>登录<a href="pagepublic.html">免费注册</a></p>
+				</div>
+				<div class="login_userinfo">
+					<form action="php/register.php" method="post" id="login_btn">
+						<div class="u_info_h">
+							<p class="u_info_p">账号</p>
+							<input id="signup_mobile" type="text" class="sign_text" name="mobile" placeholder="请输入用户名/邮箱/手机号"/>
+						</div>
+						<div class="u_info_h">
+							<p class="u_info_p">密码</p>
+							<input id="signup_pwd" type="password" class="sign_text" name="pwd" placeholder="请输入密码"/>
+						</div>
+						
+						<div class="u_info_h u_info_code">
+							<p class="u_info_p">验证码</p>
+							<p class="u_info_text">
+								<input id="signup_yzm" type="text" class="sign_text" placeholder="请输入验证码"/>
+								<span id="yzm_code" class="yzm_code"></span>
+								<span class="re_code">换一换</span>
+							</p>
+							<p class="error"></p>
+						</div>
+						<div class="u_info_other">
+							<p>自动登录</p>
+							<a href="#">忘记密码？</a>
+						</div>
+						<div class="u_info_btn">
+							<input type="submit" class="login_btn" value="同意协议并注册"/>
+							<a href="#">《知我网用户协议》</a>
+						</div>
+					</form>
+				</div>
+				<div class="login_foot">
+					<p>合作网站账号登录</p>
+					<ul class="clearfix">
+						<li class="qq"><a href="#">QQ</a></li>
+						<li class="zfb"><a href="#">支付宝</a></li>
+						<li class="xinlang"><a href="#">新浪微博</a></li>
+						<li class="t360"><a href="#">360</a></li>
+						<li class="baidu"><a href="#">百度</a></li>
+						<li class="ren"><a href="#">人人</a></li>
+						<li class="xunlei"><a href="#">迅雷</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="foot_top w960 clearfix">
+				<dl>
+					<dt>真品保证</dt>
+					<dd><a href="#">品牌合作</a></dd>
+					<dd><a href="#">严格把关</a></dd>
+					<dd><a href="#">百度投资</a></dd>
+					<dd><a href="#">全球品牌直供</a></dd>
+				</dl>
+				<dl>
+					<dt>30天包退</dt>
+					<dd><a href="#">退换货政策</a></dd>
+					<dd><a href="#">办理退换货</a></dd>
+					<dd><a href="#">售后服务</a></dd>
+				</dl>
+				<dl>
+					<dt>139元包邮</dt>
+					<dd><a href="#">配送政策</a></dd>
+					<dd><a href="#">快递查询</a></dd>
+				</dl>
+				<dl>
+					<dt>药妆专柜</dt>
+					<dd><a href="#">肤质判定</a></dd>
+					<dd><a href="#">肌肤问题</a></dd>
+					<dd><a href="#">达人推荐</a></dd>
+					<dd><a href="#">护肤常识</a></dd>
+				</dl>
+				<dl>
+					<dt>关于知我</dt>
+					<dd><a href="#">知我介绍</a></dd>
+					<dd><a href="#">商务合作</a></dd>
+					<dd><a href="#">友情链接</a></dd>
+					<dd><a href="#">开放API</a></dd>
+				</dl>
+				<dl>
+					<dt>新手指南</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">支付方式</a></dd>
+					<dd><a href="#">化妆品品牌大全</a></dd>
+				</dl>
+				<dl>
+					<dt>联系方式</dt>
+					<dd><a href="#">在线客服咨询</a></dd>
+					<dd class="hot_line">热线</dd>
+					<dd class="hot_tell">
+						400-630-1018<br/>
+						010-65389618
+					</dd>
+				</dl>
+				<dl class="dl_last">
+					<dt>知我微信商城</dt>
+					<dd><img src="img/footer_vx.jpg" alt="" /></dd>
+				</dl>
+			</div>
+			<div class="foot_center">
+				<ul class="fc_list">
+					<li class="fcb_invest ">百度投资</li>
+					<li class="fcb_quality">真品保证</li>
+					<li class="fcb_return">30天包退</li>
+					<li class="fcb_mail">139元包邮</li>
+				</ul>		
+			</div>
+			<div class="foot_bottom w1100">
+				<p class="fb_p1"></p>
+				<p class="fb_p2">© 2015-2019 知我天成科技（北京）股份有限公司 zhiwo.com 保留一切权利。客服热线：400-630-1018</p>
+				<ul class="fb_list">
+					<li><a href="">京ICP备10047008号</a><i>|</i></li>
+					<li><a href="">京ICP证110762号</a><i>|</i></li>
+					<li><span>网公安备1101054365号</span><i>|</i></li>
+					<li><span>营业执照</span></li>
+				</ul>
+				<div class="fb_img">
+					<img src="img/footer_copy_02.jpg" alt="" />
+					<img src="img/footer_copy_03.jpg" alt="" />
+					<img src="img/footer_copy_05.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>	
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	$("#header .item_btn").mouseenter(function(){
+		$(this).find(".item_con").stop().slideDown(200);
+	})
+	$("#header .item_btn").mouseleave(function(){
+		$(this).find(".item_con").stop().slideUp(200);
+	})
+	//header center
+	$("#header .shopcar").mouseenter(function(){
+		$("#header .shopcar").find(".shopgoods").css({"display":"block"})
+	})
+	$("#header .shopcar").mouseleave(function(){
+		$("#header .shopcar").find(".shopgoods").animate({"height":0},300,function(){
+			$(this).css({"display":"none","height":"280px"})
+		});
+	})
+	//header mainnav
+	$("#header .con_right li.fcb").hover(function(){
+		$(this).stop().animate({"width":"74px"},500);
+	},function(){
+		$(this).stop().animate({"width":0},500);
+	})
+	$("#header .con_right li.fcb_return").hover(function(){
+		$(this).stop().animate({"width":"100px"},500);
+	},function(){
+		$(this).stop().animate({"width":0},500);
+	})
+	//header shoplist
+	$("#header .sel_list").hover(function(){
+		$(this).find(".shop_list").stop().slideDown(200);
+	},function(){
+		$(this).find(".shop_list").stop().slideUp(200);
+	})
+	
+	//表单验证
+	//创建验证码
+	function flagYzm(){
+		var str="";	
+		for(i=1;i<=4;i++){
+			num=getRand(48,122);
+			if((num>=58&&num<=64)||(num>=91&&num<=96)){
+				i--;
+			}else{
+				str+=String.fromCharCode(num);
+			}		
+		}
+		$("#yzm_code").text(str)
+	}
+	$(function(){
+		flagYzm();
+		$(".re_code").click(function(){
+			flagYzm();
+		})
+	})
+	
+	var flagyzm=false;
+	$("#signup_yzm").blur(function(){
+		if($("#signup_yzm").val()==$("#yzm_code").text()){
+			flagyzm=true;
+		}else{
+			$("#signup_yzm").parent().next().text("输入的验证码不正确");
+			flagyzm=false;
+		}
+	})
+	var flagmobile=false;
+	$("#signup_mobile").blur(function(){
+		var reg=/^1[3578]\d{9}$/;
+		var con=$(this).val();
+		if(reg.test(con)){
+			$(this).next().text("可以使用");
+			flagmobile=true;
+		}else{
+			$(this).next().text("手机格式有误，请重新输入");
+		}
+	})
+	var flagpwd=false;
+	$("#signup_pwd").blur(function(){
+		if(/^\w{6,16}$/.test($(this).val())){
+			$(this).next().text("");
+			flagpwd=true;
+		}else{
+			$(this).next().text("密码长度需6-16位字符");
+			flagpwd=false;
+		}
+	})
+	var flagqpwd=false;
+	$("#signup_qpwd").blur(function(){
+		if($(this).val()==""&&!$("signup_pwd").val()){
+			$(this).next().text("请确认密码");
+			flagqpwd=false;
+		}
+		if($(this).val()==$("#signup_pwd").val()){
+			flagqpwd=true;
+		}else{
+			$(this).next().text("两次输入的密码不匹配")
+			flagqpwd=false;
+		}
+	})
+	
+	$("#login_btn").submit(function(){
+		if(flagmobile&&flagpwd&&flagqpwd&&flagyzm){
+			return true;
+		}
+		return false;
+	})
+
+	//随机数
+	function getRand(min,max){
+		return Math.floor(Math.random()*(max-min+1)+min)
+	}
+	
+	
+</script>

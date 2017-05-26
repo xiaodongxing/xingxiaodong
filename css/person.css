@@ -1,0 +1,14 @@
+#main{width:100%;background:#f6f6f3;padding:35px 0 100px;}
+#main .main_list{padding:25px 30px 30px;background:#FFFFFF;float:left;margin-right:20px;}
+#main .main_list h2{font-size:22px;height:45px;line-height: 45px;font-weight: normal;}
+#main .main_list li{padding:15px 0;border-top:1px dashed #e0e0e0;}
+#main .person_info img {float:left;margin-right:20px;}
+#main .person_info .zhanghao{float:left}
+#main .person_info .name{display:block;max-width:90px;height:20px;line-height: 20px;overflow: hidden;text-overflow: ellipsis;font-size:8px;color:#6c6c6c;}
+#main .person_info .vip{display:block;color:#00c8ff;margin-top:10px;}
+#main .main_list .list_info h3{font-size:18px;font-weight: normal;}
+#main .main_list .list_info a{display: block;height:15px;line-height: 15px;margin-top:12px}
+#main .main_list .list_info a i{float:left;width:2px;height:2px;background:#6c6c6c;margin-top:6px;margin-right:5px;}
+#main .main_con{float:left;width:640px;padding:25px 30px 70px;background:#FFFFFF}
+#main .main_con h3{font-weight: normal;height:40px;line-height: 40px;border-bottom: 1px dotted #E0E0E0;font-size:16px;}
+

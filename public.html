@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-		<link rel="stylesheet" href="css/index.css" />
 	</head>
 	<body>
 			<div id="header">
@@ -12,8 +11,8 @@
 						<div id="login_status" class="top_left">
 							<ul class="clearfix">
 								<li>欢迎来到知我！这里，用专业呵护美丽。</li>
-								<li><a href="#">请登录</a></li>
-								<li><a href="#">快速注册</a></li>
+								<li><a href="login.html">请登录</a></li>
+								<li><a href="pagepublic.html">快速注册</a></li>
 							</ul>
 						</div>
 						<div class="top_right">
@@ -79,6 +78,33 @@
 									<p class="empty_bg"></p>
 									<p class="empty_cont1">购物车为空</p>
 									<p class="empty_cont2">请挑选最爱的商品吧！</p>
+								</div>
+								<div class="myshopcar" style="display: none">
+									<!--动态添加的商品列表-->
+									<div class="myshop_con">
+										<ul class="myshop_list">
+											<!--<li class="myshop_item">
+												<div class="shop_img"><a href=""><img src="img/shop_small.jpg" alt="" /></a></div>
+												<div class="shop_info">
+													<p class="shop_info_name">倩碧清爽液体洁面皂200ml（专柜）</p>
+													<div class="shop_opreat">
+														<span class="shop_price">¥ 99.0</span>
+														<p class="shop_count">
+															<span class="shop_count_down" data-num="-1">-</span>
+															<input type="text" name="buy_num" value="1"/>
+															<span class="shop_count_down" data-num="1">+</span>
+														</p>
+														<a href="#">删除</a>
+													</div>
+												</div>
+											</li>-->
+										</ul>
+									</div>
+									<div class="account">
+										<p class="account_shopcount">共<span>0</span>件商品</p>
+										<p class="account_zongjia">共计<i>¥</i><span></span></p>
+										<p class="account_btn"><a href="#">去购物车结算</a></p>
+									</div>
 								</div>
 							</div>
 						</div>

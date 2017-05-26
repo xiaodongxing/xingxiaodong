@@ -2,7 +2,8 @@
 #content {
   width: 100%;
   background: #f6f6f3;
-  padding-top: 20px; }
+  padding: 20px 0 35px;
+  overflow: hidden; }
   #content .content .now_pos ul {
     height: 40px;
     line-height: 40px;
@@ -241,6 +242,8 @@
           #content .recommend ul li .rec_img a img {
             width: 225px;
             height: 225px; }
+      #content .recommend ul li .rec_img:hover {
+        opacity: .8; }
       #content .recommend ul li .rec_info {
         padding: 10px 12px 15px;
         background: #FFFFFF;
@@ -331,9 +334,11 @@
       float: right;
       width: 700px; }
       #content .detail_info .info_right .detail_info_nav {
+        width: 700px;
         height: 40px;
         line-height: 40px;
-        background: #6C6C6C; }
+        background: #6C6C6C;
+        z-index: 500; }
         #content .detail_info .info_right .detail_info_nav ul {
           float: left;
           padding-left: 35px;
@@ -372,7 +377,144 @@
               background: #FF643C;
               text-align: center;
               color: #FFFFFF; }
-        #content .detail_info .info_right .detail_info_nav .info_right_con {
-          padding: 20px 20px 0; }
+      #content .detail_info .info_right .info_right_con {
+        padding: 20px 20px 0;
+        background: #FFFFFF; }
+        #content .detail_info .info_right .info_right_con h2 {
+          font-weight: normal;
+          height: 25px;
+          border-bottom: 1px solid #C4C4C4; }
+          #content .detail_info .info_right .info_right_con h2 span {
+            display: block;
+            height: 18px;
+            line-height: 18px;
+            border-left: 5px solid #00c8ff;
+            padding-left: 5px;
+            font-size: 18px;
+            color: #000000; }
+            #content .detail_info .info_right .info_right_con h2 span i {
+              font-style: normal;
+              font-family: arial;
+              margin-left: 8px; }
+        #content .detail_info .info_right .info_right_con .product_info .intro_list {
+          padding: 25px 0;
+          min-height: 240px;
+          position: relative; }
+          #content .detail_info .info_right .info_right_con .product_info .intro_list table {
+            border-collapse: collapse;
+            border-spacing: 0; }
+            #content .detail_info .info_right .info_right_con .product_info .intro_list table td {
+              line-height: 25px;
+              vertical-align: top; }
+            #content .detail_info .info_right .info_right_con .product_info .intro_list table .tab_title {
+              font-weight: bold;
+              color: #000000;
+              width: 60px; }
+            #content .detail_info .info_right .info_right_con .product_info .intro_list table .tab_con {
+              width: 300px;
+              padding-left: 25px; }
+          #content .detail_info .info_right .info_right_con .product_info .intro_list .intro_img {
+            width: 225px;
+            height: 225px;
+            position: absolute;
+            right: 20px;
+            top: 30px; }
+            #content .detail_info .info_right .info_right_con .product_info .intro_list .intro_img img {
+              width: 225px;
+              height: 225px; }
+        #content .detail_info .info_right .info_right_con .pro_con {
+          padding: 20px 0 40px; }
+          #content .detail_info .info_right .info_right_con .pro_con img {
+            display: block;
+            max-width: 660px;
+            margin: 0 auto; }
+        #content .detail_info .info_right .info_right_con .use_con {
+          padding: 20px 0 40px; }
+        #content .detail_info .info_right .info_right_con .price_explain ul {
+          height: 38px;
+          padding: 20px 0 30px; }
+          #content .detail_info .info_right .info_right_con .price_explain ul li {
+            line-height: 38px;
+            float: left;
+            font-size: 18px;
+            margin-right: 6px; }
+          #content .detail_info .info_right .info_right_con .price_explain ul .pri_list {
+            width: 160px;
+            height: 36px;
+            border: 1px dashed #f39800;
+            background: #f7edd8;
+            display: flex;
+            align-items: center; }
+            #content .detail_info .info_right .info_right_con .price_explain ul .pri_list span {
+              color: #C4C4C4;
+              margin: 0 auto;
+              display: block;
+              width: 120px;
+              height: 22px;
+              line-height: 22px;
+              text-align: center;
+              background: #ffffff;
+              font-size: 12px; }
+              #content .detail_info .info_right .info_right_con .price_explain ul .pri_list span i {
+                font-style: normal; }
+        #content .detail_info .info_right .info_right_con .product_usercomment .comment_list {
+          padding: 30px 0; }
+          #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li {
+            height: 92px;
+            margin-bottom: 20px; }
+            #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_ueser {
+              float: left;
+              width: 70px;
+              height: 92px; }
+              #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_ueser .com_userphoto {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 12px; }
+                #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_ueser .com_userphoto img {
+                  width: 70px;
+                  height: 70px; }
+              #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_ueser .com_username {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+                color: #000000; }
+            #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con {
+              padding: 15px 20px;
+              height: 62px;
+              width: 520px;
+              float: right;
+              background: #f6f6f3; }
+              #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_timer {
+                height: 15px;
+                margin-bottom: 15px; }
+                #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_timer p {
+                  float: left; }
+                #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_timer p.com_star {
+                  height: 15px;
+                  width: 88px;
+                  margin-left: 10px;
+                  background: url(../img/comment_star.png) left top no-repeat; }
+                  #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_timer p.com_star span {
+                    display: block;
+                    height: 15px;
+                    width: 100%;
+                    background: url(../img/comment_star.png) left -20px no-repeat; }
+                #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_timer .com_nowtimer {
+                  float: right;
+                  color: #c4c4c4; }
+              #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_content {
+                height: 15px;
+                line-height: 15px;
+                padding-left: 35px; }
+              #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_zan {
+                height: 15px; }
+                #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_zan p {
+                  float: right; }
+                  #content .detail_info .info_right .info_right_con .product_usercomment .comment_list li .comment_con .com_zan p a {
+                    display: block;
+                    height: 15px;
+                    padding: 0 5px 0 20px;
+                    background: url(../img/comment_star.png) left -37px no-repeat; }
 
 /*# sourceMappingURL=detail.css.map */
